@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "snipeitpy"
+version = "2025.04.16"
+requires-python = ">=3.9"
+authors = [
+  {name = "Timothy Loftus (n3s0)", email = "tloftus@protonmail.com"},
+]
+maintainers = [
+  {name = "Timothy Loftus (n3s0)", email = "tloftus@protonmail.com"},
+]
+description = "Python library for the Snipe IT API"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+keywords = ["snipeitpy", "snipeit-api"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Topic :: Software Development :: Build Tools",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Programming Language :: Python :: 3 :: Only",
+]
+dependencies = [
+  "certifi==2025.1.31",
+  "charset-normalizer==3.4.1",
+  "idna==3.10",
+  "requests==2.32.3",
+  "urllib3==2.4.0",
+]
+
+[project.optional-dependencies]
+dev = ["check-manifest"]
+test = ["coverage"]
+
+[project.urls]
+"Homepage" = "https://github.com/n3s0/snipeitpy"
+"Bug Reports" = "https://github.com/n3s0/snipeitpy/issues"
+"Source" = "https://github.com/n3s0/snipeitpy"
+
+[project.scripts]
+#sample = "sample:main"
+
